@@ -70,9 +70,9 @@ function create-table {
 
 echo
 
-echo "Creating User"
+echo "Skipping creating User - cannot create users on Heroku"
 echo "- - -"
-create-user
+# create-user
 echo
 
 echo "Creating Database"
