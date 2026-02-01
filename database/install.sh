@@ -70,7 +70,7 @@ function create-table {
 
 echo
 
-echo "Skipping creating User - cannot create users on Heroku"
+echo "Skipping creating User - cannot create users/roles on Heroku"
 echo "- - -"
 # create-user
 echo
@@ -109,7 +109,9 @@ source $base/install-indexes.sh
 source $base/install-views.sh
 
 # Install privileges
-source $base/install-privileges.sh
+echo "Skipping install-privileges - users/roles were not created (Heroku)"
+echo "- - -"
+# source $base/install-privileges.sh
 
 echo "= = ="
 echo "Done Installing Database"
